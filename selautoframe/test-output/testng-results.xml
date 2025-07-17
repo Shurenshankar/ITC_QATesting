@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-11T05:30:37 UTC" name="Default suite" finished-at="2025-07-11T05:30:39 UTC" duration-ms="1600">
+    <groups>
+    </groups>
+    <test started-at="2025-07-11T05:30:37 UTC" name="Default test" finished-at="2025-07-11T05:30:39 UTC" duration-ms="1600">
+      <class name="testcase.LoginTestExcel">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTestExcel@4facf68f]" started-at="2025-07-11T05:30:39 UTC" name="loginTest" data-provider="excelData" finished-at="2025-07-11T05:30:39 UTC" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTestExcel@4facf68f]" started-at="2025-07-11T05:30:39 UTC" name="loginTest" data-provider="excelData" finished-at="2025-07-11T05:30:39 UTC" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[st1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTestExcel@4facf68f]" started-at="2025-07-11T05:30:39 UTC" name="loginTest" data-provider="excelData" finished-at="2025-07-11T05:30:39 UTC" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stude]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTestExcel@4facf68f]" started-at="2025-07-11T05:30:39 UTC" name="loginTest" data-provider="excelData" finished-at="2025-07-11T05:30:39 UTC" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTestExcel@4facf68f]" started-at="2025-07-11T05:30:39 UTC" name="loginTest" data-provider="excelData" finished-at="2025-07-11T05:30:39 UTC" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- testcase.LoginTestExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
