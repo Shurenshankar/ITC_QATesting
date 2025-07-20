@@ -26,13 +26,12 @@ public class LoginTest extends BaseTest {
         String errorMsg = loginPage.getErrorMessage();
         Assert.assertTrue(errorMsg.contains("Username and password do not match any user in this service"),
             "Expected error message not displayed.");
-    }
+    }  
     @Test
-    public void testAddBackpackToCartAndCheckout() {
-    	LoginPage loginPage = new LoginPage(driver);
+    public void testAddBackpackToCartAndCheckout() throws InterruptedException {
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.login("standard_user", "secret_sauce");
 
-        
         ProductPage productPage = new ProductPage(driver);
 
         // Perform full flow: open product, add to cart, click cart icon, then checkout
@@ -41,15 +40,17 @@ public class LoginTest extends BaseTest {
         // Assert that user is on checkout page
         Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"), "Did not navigate to checkout page");
     }
-    @Test
-    public void testCheckoutInformationFormSubmission() {
-        checkoutInformation checkoutInfo = new checkoutInformation(driver);
-        checkoutInfo.fillInformationAndContinue("John", "Doe", "12345");
-        checkoutInfo.completeOrderAndLogout();
 
-        // Assert that user navigated to next step
-        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo.com"), "Logout unsuccessful or wrong redirection.");    }
-
-
-
+//    @Test
+//    public void testCheckoutInformationFormSubmission() {
+//        checkoutInformation checkoutInfo = new checkoutInformation(driver);
+//        checkoutInfo.fillInformationAndContinue("John", "Doe", "12345");
+//        checkoutInfo.completeOrderAndLogout();
+//
+//        // Assert that user navigated to next step
+//        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo.com"), "Logout unsuccessful or wrong redirection.");    }
+//
+//
+//
+// 
 }

@@ -6,8 +6,10 @@
       <class name="testcase.LoginTest">
         <methods>
           <include name="testInvalidLogin"/>
+          <include name="testAddBackpackToCartAndCheckout"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testValidLogin"/>
         </methods>
       </class> <!-- testcase.LoginTest -->
     </classes>

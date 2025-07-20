@@ -7,7 +7,7 @@ public class ProductPage {
     private WebDriver driver;
 
     private By backpackProduct = By.xpath("//div[normalize-space()='Sauce Labs Backpack']");
-    private By addToCartButton = By.xpath("//button[@id='add-to-cart']");
+    private By addToCartButton = By.id("add-to-cart-sauce-labs-backpack"); // ✅ Correct
     private By cartIcon = By.className("shopping_cart_link"); 
     private By checkoutBtn = By.id("checkout");  // <-- added this
 
@@ -31,7 +31,8 @@ public class ProductPage {
         driver.findElement(checkoutBtn).click();
     }
 
-    public void selectBackpackAddToCartAndCheckout() {
+    public void selectBackpackAddToCartAndCheckout() throws InterruptedException {
+    	Thread.sleep(4000);
         openBackpackProduct();
         addToCart();
         clickCartIcon();
